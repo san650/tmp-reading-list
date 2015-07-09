@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading list</title>
+    <link rel="stylesheet" href="stylesheets/main.css"> </head>
+  <body>
+    <header class="header">
+      <h1>Reading list</h1>
+    </header>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="index.html" class="is-active">Dashboard</a>
+          </li>
+          <li>
+            <a href="to_read.html">To read next</a>
+          </li>
+          <li>
+            <a href="to_buy.html">To buy</a>
+          </li>
+          <li>
+            <a href="search.html">Search</a>
+          </li>
+          <li>
+            <a href="history.html">History</a>
+          </li>
+        </ul>
+        <p>group by</p>
+        <ul>
+          <li>
+            <a href="by_author.html">author</a>
+          </li>
+          <li>
+            <a href="by_year.html">year</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <div class="article">
+          <article class="search">
+            <fieldset>
+              <input placeholder="book title or author name...">
+              <button>Search</button>
+            </fieldset>
+            <h3>Results</h3>
+            <div class="content">
+              <ol>
+                <li>
+                  <a href="#">Ubik</a>
+                  <a class="year" href="by_year.html">(1969)</a> -
+                  <a href="biography.html">Philip K. Dick</a>
+                  <a href="#" class="action" onclick="javascript:alert('Add in _to read next_ shelve');">to read next</a>
+                  <a href="#" class="action">to buy</a>
+                  <a href="#" class="action">mark as read</a>
+                </li>
+              </ol>
+            </div>
+            <p> Didn't find your book?
+              <a href="add.html">Create it</a>. </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
